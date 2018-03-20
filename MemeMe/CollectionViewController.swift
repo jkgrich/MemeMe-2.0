@@ -16,6 +16,7 @@ class CollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.collectionView?.contentMode = .scaleAspectFit
     }
 
     override func viewWillAppear(_ animated: Bool) {
