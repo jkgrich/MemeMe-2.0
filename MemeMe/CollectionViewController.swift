@@ -15,8 +15,8 @@ class CollectionViewController: UICollectionViewController {
     var memes: [Meme]!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.collectionView?.contentMode = .scaleAspectFit
+        super.viewDidLoad() 
+        collectionView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -27,7 +27,7 @@ class CollectionViewController: UICollectionViewController {
         memes = appDelegate.memes
         self.collectionView?.reloadData()
     }
-
+    
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
