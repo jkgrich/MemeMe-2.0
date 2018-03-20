@@ -192,6 +192,7 @@ class EditScreenViewController: UIViewController, UIImagePickerControllerDelegat
         myImageVIew.image = nil
         topTextField.text = "TOP"
         bottomTextField.text = "BOTTOM"
+        dismiss(animated: true, completion: nil)
     }
     
 }
