@@ -14,9 +14,21 @@ class CollectionViewController: UICollectionViewController {
     //MARK: Properties
     var memes: [Meme]!
     
+    //MARK: Outlets
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+    
+    func flowLayoutSetup() {
+        let space: CGFloat = 3.0
+        let dimension = (view.frame.size.width - (2 * space)) / 3.0
+        flowLayout.minimumInteritemSpacing = space
+        flowLayout.minimumLineSpacing = space
+        flowLayout.itemSize = CGSize(width: dimension, height: dimension)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad() 
         collectionView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        flowLayoutSetup()
     }
 
     override func viewWillAppear(_ animated: Bool) {
