@@ -73,7 +73,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o4d-Sv-reb">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o4d-Sv-reb">
                                             <rect key="frame" x="12" y="8" width="116" height="124"/>
                                         </imageView>
                                     </subviews>
@@ -101,6 +101,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="flowLayout" destination="kLN-Tr-2Dc" id="98f-0x-IE2"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeL-PG-NPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -293,6 +296,6 @@
         <image name="table" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vrp-ys-8Sa"/>
+        <segue reference="zyU-va-rfO"/>
     </inferredMetricsTieBreakers>
 </document>
